@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Maitri Patel</div>
+        <div>
+            <ul class="nav-links">
+                <li><a class="a1" href="#about">About</a></li>  <!--shift+alt+ press down to copy paste same -->
+                <!-- <li><a class="a2" href="#experience">Experience</a></li> -->
+                <li><a class="a3" href="#projects">Skills</a></li>
+                <li><a class="a4" href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Maitri Patel</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon"onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a class="a1" href="#about" onclick="toggleMenu()">About</a></li>  <!--shift+alt+ press down to copy paste same -->
+                <!-- <li><a class="a2" href="#experience" onclick="toggleMenu()" > Experience</a></li> -->
+                <li><a class="a3" href="#projects" onclick="toggleMenu" > Skills</a></li>
+                <li><a class="a4" href="#contact" onclick="toggleMenu"> Contact</a></li>    
+            </div>
+
+        </div>
+    </nav>
+
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="maitri.jpg" alt=" Maitri's profile picture" class="maitri">
+        </div>
+        <div class="section__text">
+            <p class="sec_text_p1">Hello, I'am</p>
+            <h1 class="title multicolor-hover" >Maitri Patel</h1>
+            <p class="sec_text_p2">developer</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2"onclick="window.open('./assets/resume-example.pdf')">
+                    Download CV
+                </button>
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">
+                    Contact Info
+                </button>
+            </div>
+            <div id="social-container">
+                 <img src="./assets/linkedin.png" alt="my linked profile" class="icon" onclick="location.href='https://www.linkedin.com/in/maitri-patel-573927287?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app '"> 
+
+                <!--<a href= 'https://www.linkedin.com/in/maitri-patel-573927287?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app '> <img src= "./assets/linkedin.png" height="100"></a> -->
+
+                <!-- THE ABOVE ANCHOR TAG IS ANOTHER EASY WAY TO LINK LINKED PROFILE -->
+                <img src="./assets/github.png" alt="my github profile" class="icon" onclick="location.href= 'https://github.com/codeWithMaitri' "> 
+
+            </div>
+        </div>
+    </section>
+
+    <div class="border"></div>
+
+    <section id="about">
+        <p class="sec_text_p1 p-about">Get To Know More</p>
+            <h1 class="title multicolor-hover" >About Me</h1>
+            <div class="section-container">
+                <div class="section__pic-container">
+                    <img src="./assets/about me.jpg" alt="Profile picture" class="about-pic">
+                </div>
+                <div class="about-details-container">
+                    <div class="about-container">
+                        <div class="details-container">
+                            <img src="./assets/experience.png" alt="experienced icon " class="icon">
+                            <h3>Beginner</h3>
+                            <p> Frontend Web Developer</p>
+                        </div>
+                        <div class="details-container">
+                           
+                            <img src="./assets/education.png" alt="education  icon " class="icon">
+                            <h3>Education</h3>
+                            <p> persuing  BE computer Engineering</p>
+                        </div>
+                    </div>
+                    <div class="text-container">
+                        <p class="lorem">Hi! i'm a 3rd-year Computer Engineering Student driven by curiosity and creativity. i love building websites and learning more about web technologies like HTML, CSS, & JavaScript every day.</p>
+                    </div>
+                </div>
+            </div>
+<img src="./assets/arrow.png" alt="arrow " class="icon arrow" onclick="location.href='./#projects'">
+    </section>
+
+    <div class="border"></div>
+
+    <section id="projects">
+        <p class="sec_text_p1 p-about">Tech i'm Exploring~ </p>
+        <h1 class="title multicolor-hover"> Skills</h1>
+        <div class="experience-details-container ">
+            <div class="about-containers scroll-row" id="project-slider">
+
+
+            <div class="details-container color-container con">
+                <div class="artical-container">
+                    <img src="./assets/html2.png" alt=" html " class="project-img html2">
+                </div>
+                <h2 class="experience-sub-title">HTML</h2>
+                <div class="btn-container">
+                    <button class=" btn btn-color-2 project-btn" onclick="location.href='https://youtu.be/HcOc7P5BMi4?si=1t1af_U3xItGVvGI' "> Youtube</button>
+                    <button class=" btn btn-color-2 project-btn" onclick="location.href='https://developer.mozilla.org/en-US/docs/Web/HTML'"> Explore Docs</button>
+                </div>
+            </div>
+
+
+            <div class="details-container color-container con ">
+                <div class="artical-container">
+                    <img src="./assets/css3.png" alt=" CSS " class="project-img css">
+                </div>
+                <h2 class="experience-sub-title">CSS</h2>
+                <div class="btn-container">
+                    <button class=" btn btn-color-2 project-btn" onclick="location.href='https://youtu.be/ESnrn1kAD4E?si=Gx9pyYd7U_wqyxdY "> Youtube</button>
+                    <button class=" btn btn-color-2 project-btn" onclick="location.href='https://developer.mozilla.org/en-US/docs/Web/CSS' ">Explore Docs</button>
+                </div>
+            </div>
+            <div class="details-container color-container con ">
+                <div class="artical-container">
+                    <img src="./assets/js.png" alt=" JavaScript " class="project-img js">
+                </div>
+                <h2 class="experience-sub-title">JavaScript</h2>
+                <div class="btn-container">
+                    <button class=" btn btn-color-2 project-btn" onclick="location.href='https://youtu.be/rfObCuGLSek?si=sIh23fmQe2Nmkeqs' "> Youtube</button>
+                    <button class=" btn btn-color-2 project-btn" onclick="location.href='https://developer.mozilla.org/en-US/docs/Web/JavaScript' "> Explore Docs</button>
+                </div>
+            </div>
+            <div class="details-container color-container con ">
+                <div class="artical-container">
+                    <img src="./assets/python.png" alt=" python " class="project-img">
+                </div>
+                <h2 class="experience-sub-title">Python</h2>
+                <div class="btn-container">
+                    <button class=" btn btn-color-2 project-btn" onclick="location.href='https://youtu.be/vLqTf2b6GZw?si=x9bEobl6h-MsxE7v' "> Youtube</button>
+                    <button class=" btn btn-color-2 project-btn" onclick="location.href='https://docs.python.org/3/tutorial/index.html' "> Explore Docs</button>
+                </div>
+            </div>
+
+
+            <div class="details-container color-container con">
+                <div class="artical-container">
+                    <img src="./assets/C.png" alt="C"  class="project-img c">
+                </div>
+                <h2 class="experience-sub-title">C language</h2>
+                <div class="btn-container">
+                    <button class=" btn btn-color-2 project-btn" onclick="location.href='https://youtu.be/irqbmMNs2Bo?si=_ANXSHvu2fH_S1Bp' "> Youtube</button>
+                    <button class=" btn btn-color-2 project-btn" onclick="location.href='https://www.w3schools.com/c/' ">Explore Docs</button>
+                </div>
+            </div>
+
+             <div class="details-container color-container con">
+                <div class="artical-container">
+                    <img src="./assets/java1.png" alt="Java"  class="project-img c">
+                </div>
+                <h2 class="experience-sub-title">Java</h2>
+                <div class="btn-container">
+                    <button class=" btn btn-color-2 project-btn" onclick="location.href='https://youtu.be/UmnCZ7-9yDY?si=2XNT47MLzgplE3Ec' "> Youtube</button>
+                    <button class=" btn btn-color-2 project-btn" onclick="location.href='https://www.w3schools.com/c/' ">Explore Docs</button>
+                </div>
+            </div>
+
+
+        </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'">
+    </section>
+
+    <div class="border"></div>
+
+    <section id="contact">
+        <p class="sec_text_p1 p-about" >get in Touch</p>
+        <h1 class="title multicolor-hover"> Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="./assets/email.png" alt=" Email icon" class="icon contact-icon email-icon">
+                <p><a href="mailto:maitripatel2705@gmail.com">maitripatel2705@gmail.com</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img src="./assets/linkedin.png" alt=" linkedin icon" class="icon contact-icon">
+                <p><a href="https://www.linkedin.com/in/maitri-patel-573927287?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app ">Linkedin</a></p>
+
+        </div>
+    </section>
+
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                 <ul class="nav-links">
+                <li><a class="a1" href="#about">About</a></li>  <!--shift+alt+ press down to copy paste same -->
+                <!-- <li><a class="a2" href="#experience">Experience</a></li> -->
+                <li><a class="a3" href="#projects">Skills</a></li>
+                <li><a class="a4" href="#contact">Contact</a></li>
+            </ul>
+
+            </div>
+        </nav>
+        <p>Copyight &#169; 2025 Maitri Patel. All Rights Reserved</p>
+    </footer>
+
+    <script src="index.js"></script>   
+</body>
+
+</html>
